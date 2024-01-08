@@ -1,4 +1,75 @@
+
+
 html {
   height: 100%;
   width: 100%;
 }
+
+      
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #3936f7;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #ff8800;
+  color: #3936f7;
+}
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+  } 
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns:  auto auto auto auto;
+  padding: 75px;
+}
+.grid-item {
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 60px;
+  width: 200px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.button {
+  background-color: #ff8800;
+  border: none;
+  color: #3936f7;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
