@@ -5,25 +5,26 @@ html {
   width: 100%;
 }
 
-      
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background: #3936f7;
+  background: #005cd4;
 }
 
 /* Style the header */
 .header {
-  padding: 80px;
-  text-align: center;
-  background: #ff8800;
+  padding: 40px;
+  background: #ff9900;
   color: #3936f7;
+  border: 1px solid white;
 }
+
+
 /* Increase the font size of the h1 element */
-.header h1 {
+h1 {
   font-size: 40px;
-  } 
+  color: #ff9900;
+} 
 .border {
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 25px;
@@ -45,12 +46,14 @@ body {
   text-align: center;
 }
 
-
-.button {
+.show{
+font-size: 10px;
+margin-top: -35px;
+}
+button {
   background-color: #ff8800;
   border: none;
-  color: #3936f7;
-  padding: 20px;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -59,17 +62,43 @@ body {
   cursor: pointer;
 }
 
+.button1{
+  
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
 
+.right{
+  text-align: right;
+  margin-left: 380%;
+}
 
+.login{
+  padding: 10px;
+  border-radius: 10%;
+  margin-bottom: -10px;
+}
 
+.loginw{
+  padding: 10px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
+.white {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 300px;
+  font-size: 30px;
+  text-align: center;
+}
 
