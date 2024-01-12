@@ -1,5 +1,3 @@
-
-
 html {
   height: 100%;
   width: 100%;
@@ -13,18 +11,51 @@ body {
 
 /* Style the header */
 .header {
-  padding: 40px;
-  background: #ff9900;
-  color: #3936f7;
-  border: 1px solid white;
+  padding: 25px;
+  background: #ff9900;  
 }
 
+.nav{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.logo{
+  
+  float: left;
+}
+
+.classes{
+  font-size: 30px;
+  margin: 40px 40px 40px 400px;
+}
+
+.pro{
+  margin-left: 99%;
+  margin-top: 9px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.login{
+  padding: 10px;
+  border-radius: 10%;
+  margin-bottom: -10px;
+}
+
+.loginw{
+  padding: 10px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
 
 /* Increase the font size of the h1 element */
-h1 {
-  font-size: 40px;
-  color: #ff9900;
-} 
+
 .border {
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 25px;
@@ -47,9 +78,10 @@ h1 {
 }
 
 .show{
-font-size: 10px;
-margin-top: -35px;
+ font-size: 10px;
+ margin-top: -35px;
 }
+
 button {
   background-color: #ff8800;
   border: none;
@@ -63,27 +95,13 @@ button {
 }
 
 .button1{
-  
   border-radius: 50%;
   height: 50px;
   width: 50px;
 }
 
 .right{
-  text-align: right;
   margin-left: 380%;
-}
-
-.login{
-  padding: 10px;
-  border-radius: 10%;
-  margin-bottom: -10px;
-}
-
-.loginw{
-  padding: 10px;
-  border-radius: 10%;
-  margin-bottom: 10px;
 }
 
 .white {
