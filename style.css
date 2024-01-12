@@ -17,6 +17,7 @@ body {
 
 .nav{
   list-style-type: none;
+  display: inline-flex;
 }
 
 a{
@@ -29,7 +30,7 @@ a{
   float: left;
 }
 
-.classes{
+.links{
   font-size: 30px;
   margin: 40px 40px 40px 400px;
 }
