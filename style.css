@@ -11,7 +11,7 @@ body {
 
 /* Style the header */
 .header {
-  padding: 25px;
+  height: 180px;
   background: #ff9900;  
 }
 
@@ -26,21 +26,26 @@ a{
 }
 
 .logo{
-  
+  font-size: 85px;
   float: left;
+  padding-left: 25px;
+  margin-top: 0px;
+  color: #005cd4;
 }
 
 .links{
   font-size: 30px;
-  margin: 40px 40px 40px 400px;
+  padding-bottom: -10px;
+  border: 1px solid red;
 }
 
 .pro{
-  margin-left: 99%;
-  margin-top: 9px;
+  margin-left: 100%;
+  margin-top: 22px;
   border-radius: 50%;
   height: 50px;
   width: 50px;
+  float: right;
 }
 
 .login{
