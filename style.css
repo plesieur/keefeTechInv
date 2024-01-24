@@ -14,7 +14,11 @@ body {
   height: 180px;
   background: #ff9900;  
 }
-
+.prof{
+  position: absolute;
+  bottom: 150px;
+  left: 100px;
+}
 .nav{
   list-style-type: none;
   display: inline-flex;
