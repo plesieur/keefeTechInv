@@ -26,10 +26,10 @@ a{
 }
 
 .logo{
-  font-size: 85px;
+  font-size: 105px;
   float: left;
-  padding-left: 25px;
-  margin-top: 0px;
+  padding-left: 95px;
+  margin-top: 15px;
   color: #005cd4;
 }
 
@@ -39,26 +39,81 @@ a{
   border: 1px solid red;
 }
 
-.pro{
-  margin-left: 100%;
-  margin-top: 22px;
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #711345;
+  color: white;
+  padding: 16px 20px;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  float: right;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  top: 23px;
+  right: 28px;
 }
 
-.login{
-  padding: 10px;
-  border-radius: 10%;
-  margin-bottom: -10px;
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  border-radius: 25px;
 }
 
-.loginw{
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
   padding: 10px;
-  border-radius: 10%;
-  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 25px;
 }
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  border-radius: 25px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
 
 /* Increase the font size of the h1 element */
 
@@ -88,24 +143,6 @@ a{
  margin-top: -35px;
 }
 
-button {
-  background-color: #ff8800;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.button1{
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-
 .right{
   margin-left: 380%;
 }
@@ -126,3 +163,65 @@ button {
   text-align: center;
 }
 
+.addItem{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.box {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 17px;
+    align-items: center;
+}
+
+.box a {
+    display: inline-block;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.modal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(254, 126, 126, 0.7);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.content {
+    position: absolute;
+    background: white;
+    width: 400px;
+    padding: 1em 2em;
+    border-radius: 4px;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.box-close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #fe0606;
+    text-decoration: none;
+    font-size: 30px;
+}

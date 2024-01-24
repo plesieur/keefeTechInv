@@ -11,11 +11,9 @@
   <div class="header">
     <ul class="nav">
       <li> <h1 class="logo">KTI</h1> </li>
-      <!--<li><a class="links" href="index.html">Classes</a></li>
-      <li><a class="links" href = "items.html">Items</a></li>-->
-      <li><a  href = "profile.html"><button class="pro">A</button></a></li>
+      <li><a class="links" href="index.html">Classes</a></li>
+      <li><a class="links" href = "items.html">Items</a></li>
     </ul>
-      
   </div>
   <div class="grid-container">
     
@@ -93,9 +91,33 @@
   </div>  
 
   <div class="right">
-    <button class="button1">A</button>
+    <button class="">A</button>
+  </div>
+          
+  <button class="open-button" onclick="openForm()">Profile</button>
+
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Profile</h1>
+
+      <h3>Items Taken out</h3>
+      <p>like two or something</p>
+
+      <h3>Items Returned</h3>
+      <p>like two or something</p>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
   </div>
     
+  <script> 
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+                
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+  </script>
 </body>
 
 </html>
