@@ -1,0 +1,126 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #005cd4;
+}
+  
+  /* Style the header */
+.header {
+    padding: 40px;
+    background: #ff9900;
+    color: #3936f7;
+    border: 1px solid white;
+}
+  
+  
+  /* Increase the font size of the h1 element */
+h1 {
+    font-size: 40px;
+    color: orange;
+} 
+
+.border {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+}
+  
+.grid-container {
+    display: grid;
+    grid-template-columns:  auto auto auto auto;
+    padding: 75px;
+}
+
+.grid-item {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 60px;
+    width: 200px;
+    font-size: 30px;
+    text-align: center;
+}
+  
+.show{
+  font-size: 10px;
+  margin-top: -35px;
+}
+
+button {
+    background-color: orange;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+  
+.tool-button{ 
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+}
+  
+.tool-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid orange;
+    z-index: 9;
+}
+  
+.tool-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: orangered;
+}
+  
+.tool-container input[type=text], .tool-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+  
+.tool-container input[type=text]:focus, .tool-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+.tool-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 1;
+}
+  
+.tool-container .cancel {
+    background-color: red;
+}
+  
+.tool-container .btn:hover, .open-button:hover {
+    background-color: #0564e0;
+}
+
+  

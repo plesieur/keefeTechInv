@@ -3,7 +3,7 @@
 
 <head>
   <title>items</title>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link href="itemstyle.css" rel="stylesheet" type="text/css"/>
   <link rel="icon" type="image/x-icon" href="metalIcon.jpg">
 </head>
   
@@ -87,18 +87,51 @@
       src="hammer.jpg"
       alt="hammer" width="100"></div>
     <div class="grid-item">
-      <div class="border">
+      <div class="borde6r">
       <p>Lucas</p>
       </div><img
       src="hammer.jpg"
       alt="hammer" width="100">
   </div>  
+  
+  <button class="tool-button" onclick="openForm()">+</button>
+  <div class="tool-popup" id="myForm">
+    <form class="tool-container">
+      <h1>New Tool</h1>
 
-    <div class="right">
-      <button class="button1">A</button>
-    </div>
-    
-    
+      <label for="toolname"><b>Tool Name</b></label>
+      <input type="text" placeholder="Enter Tool Name" name="name" required>
+
+      <label for="quantity"><b>Quantity</b></label>
+      <input type="text" placeholder="Enter Quantity" name="quantity" required>
+
+      <label for="image"><b>Image</b></label>
+      <input type="text" placeholder="Enter Image" name="image">
+
+      <button type="submit" class="btn">Create Tool</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+
+      <script>
+        function itemSpawn() {
+         var x = document.createElement("INPUT");
+         x.setAttribute("class", "grid-item");
+         x.setAttribute("type", "button");
+         x.setAttribute("value", "New Card");
+         document.body.appendChild(x);
+        }
+
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        
+      </script>
+
 </body>
 
 </html>
