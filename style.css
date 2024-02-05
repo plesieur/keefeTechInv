@@ -9,6 +9,9 @@ body {
   background: #005cd4;
 }
 
+.orang{
+  color: #ff7b00;
+}
 /* Style the header */
 .header {
   height: 180px;
@@ -16,7 +19,7 @@ body {
 }
 .prof{
   position: absolute;
-  bottom: 150px;
+  bottom: 190px;
   left: 100px;
 }
 .nav{
@@ -98,20 +101,25 @@ a{
 .form-container .btn {
   background-color: #04AA6D;
   color: white;
-  padding: 16px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  border-radius: 25px;
   margin-bottom:10px;
   opacity: 0.8;
+  width: 100%;
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: red;
-  border-radius: 25px;
+  padding: 16px 20px;
 }
 
+/* Add a background color to the logout button */
+.form-container .logout {
+  background-color: #e8b173;
+  padding: 6px 10px;
+}
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;

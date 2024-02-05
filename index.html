@@ -13,6 +13,7 @@
       <li> <h1 class="logo">KTI</h1> </li>
       <li><a class="links" href="index.html">Classes</a></li>
       <li><a class="links" href = "items.html">Items</a></li>
+      <li><a class="links" href = "login.html">Login</a></li>
     </ul>
   </div>
   <div class="grid-container">
@@ -100,21 +101,23 @@
     <form action="/action_page.php" class="form-container">
       <h1>Profile</h1>
 
-      <h4>Name</h4>
+      <h4 id="Name"></h4>
       <img class="prof" src="profile.png" width="50" alt="placeholder">
       <h4>Email@jpkeefehs.org</h4>
       <h5>Student Account</h5>
+      <button type="button" class="btn Manage account" onclick="closeForm()">Manage Account</button>
+      <button type="button" class="btn logout" onclick="closeForm()">logout</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
     
   <script> 
     function openForm() {
-        document.getElementById("myForm").style.display = "block";
+      document.getElementById("myForm").style.display = "block";
     }
                 
     function closeForm() {
-        document.getElementById("myForm").style.display = "none";
+      document.getElementById("myForm").style.display = "none";
     }
   </script>
 </body>
