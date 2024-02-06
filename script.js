@@ -1,39 +1,7 @@
-function getName(year, stdId, email, name, outBound){
-  if(classes.includes(year) && !studentIDs.includes(stdId)){
-    studentIDs.push(stdId);
+function prpfile(name){
+  document.getElementById("Name").innerHTML = name;
+}
 
-    const row1 = document.createElement("tr");
-    row1.classList.add("student");
-    row1.id = stdId;
-
-    const col1 = document.createElement("td");
-    col1.innerHTML = name;
-
-    row1.appendChild(col1);
-
-    const col2 = document.createElement("td");
-    col2.innerHTML = email;
-
-    row1.appendChild(col2);
-
-    const col3 = document.createElement("td");
-    if(outBound > 0){
-      col3.innerHTML = outBound;
-    }
-    else{
-      col3.innerHTML = "none";
-    }
-
-    row1.appendChild(col3);
-
-    const col4 = document.createElement("td");
-    col4.classList.add("check");
-
-    row1.appendChild(col4);
-
-    document.getElementById(year).appendChild(row1);
-
-    updateNumber();
-  }
-
+function popfile(email){
+  document.getElementById("Email").innerHTML = email;
 }
