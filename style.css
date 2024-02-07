@@ -99,7 +99,6 @@ a{
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #04AA6D;
   color: white;
   border: none;
   cursor: pointer;
@@ -125,7 +124,9 @@ a{
   opacity: 1;
 }
 
-
+.Manage{
+  background-color: #04AA6D;
+}
 
 /* Increase the font size of the h1 element */
 
@@ -142,6 +143,10 @@ a{
 .show{
  font-size: 10px;
  margin-top: -35px;
+}
+
+.pfp{
+  border-radius: 100px;
 }
 
 .grid-container {
