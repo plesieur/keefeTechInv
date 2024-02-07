@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
   <title>items</title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
-  <link rel="icon" type="image/x-icon" href="metalIcon.jpg">
+  
+
 </head>
   
 <body>
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#classes">Classes</a>
+    <a href="#items">Items</a>
+    <a href="#login">Login</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+ 
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+
+
+
   <div class="header">
     <ul class="nav">
       <li> <h1 class="logo">KTI</h1> </li>
@@ -105,7 +130,7 @@
       <div class="prof">
         <button type="button" class="btn" onclick="closeForm()"><img src="profile.png" width="50" alt="placeholder"></button>
       </div>
-      <h4 id="Email"></h4>
+      <h4>Email@jpkeefehs.org</h4>
       <h5>Student Account</h5>
       <button type="button" class="btn Manage account" onclick="closeForm()">Manage Account</button>
       <button type="button" class="btn logout" onclick="closeForm()">logout</button>
@@ -113,6 +138,7 @@
     </form>
   </div>
     
+  <script src="script"></script>
   <script> 
     function openForm() {
       document.getElementById("myForm").style.display = "block";
