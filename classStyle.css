@@ -40,3 +40,7 @@ html {
 .student, .student td{
   background-color: rgb(230, 230, 230);
 }
+
+.item{
+  background-color: rgb(207, 207, 207);
+}
