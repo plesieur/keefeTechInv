@@ -144,11 +144,27 @@ a{
  margin-top: -35px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns:  auto auto auto auto;
+  padding: 75px;
+}
+.grid-item {
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 60px;
+  width: 200px;
+  font-size: 30px;
+  text-align: center;
+}
+
 .right{
   margin-left: 380%;
 }
 button {
-  background-color: red;
+  background-color: rgb(255, 102, 0);
   border: none;
   color: #ffffff;
   text-align: center;
@@ -249,3 +265,26 @@ p {
     text-decoration: none;
     font-size: 30px;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 151, 55); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7d27; 
+}
+
+
