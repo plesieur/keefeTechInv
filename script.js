@@ -1,10 +1,13 @@
 function prpfile(name){
   document.getElementById("Name").innerHTML = name;
 }
-
 function popfile(email){
   document.getElementById("Email").innerHTML = email;
 }
+function popfile(account){
+  document.getElementById("Account").innerHTML = account;
+}
+
 function dropDownClick(year) {
   if(document.getElementById(year + "Drop").innerHTML.charCodeAt(0) == "8595"){
     document.getElementById(year + "Drop").innerHTML = "&#8593";
