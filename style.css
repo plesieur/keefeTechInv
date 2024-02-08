@@ -43,7 +43,6 @@ a{
 .links{
   font-size: 30px;
   padding-bottom: -10px;
-  border: 1px solid red;
 }
 
 /* pfp change button */
@@ -308,11 +307,11 @@ body {
   color: rgba(255, 255, 255, 0.959);
 }
 
-.topnav a.active {
+/*.topnav a.active {
   background-color: #005cd4;
   color: white;
 }
-
+*/
 .topnav .icon {
   display: none;
 }
