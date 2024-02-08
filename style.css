@@ -45,7 +45,11 @@ a{
   padding-bottom: -10px;
 }
 
-
+/* pfp change button */
+.pfp{
+  border-radius: 225px;
+  background-color: white;
+}
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
