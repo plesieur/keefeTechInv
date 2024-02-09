@@ -44,3 +44,7 @@ html {
 .item{
   background-color: rgb(207, 207, 207);
 }
+
+#stdTable , #stdTable th, #stdTable td{
+  border: 1px solid black;
+}

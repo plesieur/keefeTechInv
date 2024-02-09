@@ -80,7 +80,7 @@ function addNewYear(year){
   const col4 = document.createElement("td");
   col4.classList.add("check");
   const col4Div = document.createElement("div");
-  col4Div.classList.add=("dropdown");
+  col4Div.classList.add("dropdown");
   
   const col4Btn = document.createElement("button");
   col4Btn.id = year + "Drop";
@@ -231,4 +231,54 @@ function addStudentItems(stdId, toolID, toolName){
   row1.style.display = "none";
 
   document.getElementsByClassName("tabHead " + stdId)[0].after(row1);
+}
+
+function testAddClass(){
+  var tName = document.getElementById("cName").value;
+  document.getElementById("cName").value = "";
+  addNewYear(tName);
+}
+
+function testAddStudent(stdId){
+  const stdElem = document.getElementById("add"+stdId);
+  var stdYear = document.getElementById("slt"+stdId).value;
+  var stdEmail = stdElem.cells[1].innerHTML;
+  var stdName = stdElem.cells[0].innerHTML;
+  console.log(stdYear + ", " + stdEmail + ", " + stdName);
+  addStudent(stdYear, stdId, stdEmail, stdName, 0);
+  stdElem.remove();
+}
+
+function addStudentToList(stdId, stdName, stdEmail){
+  const row = document.createElement("tr");
+  row.id = "add"+stdId;
+
+  const col1 = document.createElement("td");
+  col1.innerHTML = stdName;
+  row.appendChild(col1);
+
+  const col2 = document.createElement("td");
+  col2.innerHTML = stdEmail;
+  row.appendChild(col2);
+
+  const col3 = document.createElement("td");
+  const col3slt = document.createElement("select");
+  col3slt.id = "slt" + stdId;
+  for(let i = 0; i < classes.length; i++){
+    const col3op = document.createElement("option");
+    col3op.value = classes[i];
+    col3op.innerHTML = classes[i];
+    col3slt.appendChild(col3op);
+  }
+  col3.appendChild(col3slt);
+  row.appendChild(col3);
+
+  const col4 = document.createElement("td");
+  const col4Btn = document.createElement("button");
+  col4Btn.addEventListener("click",function(){ testAddStudent(stdId)});
+  col4Btn.innerHTML = "add student";
+  col4.appendChild(col4Btn);
+  row.appendChild(col4);
+  
+  document.getElementById("stdTable").appendChild(row);
 }

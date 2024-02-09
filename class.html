@@ -100,8 +100,54 @@
         </tr>
       </tbody>
     </table>
-  
 
+
+  
+    <div id="addClass">
+      <label for="cName"> class name</label><br>
+      <input type="text" id="cName" name="cName"><br>
+      <button onclick="testAddClass()"> add class</button>
+    </div>
+
+    <div>
+      <h3>
+        students to add
+      </h3>
+      <table id="stdTable">
+        <tr >
+          <th>
+            student name
+          </th>
+          <th>
+            email
+          </th>
+          <th>
+            class To Add
+          </th>
+          <th>
+            submit
+          </th>
+        </tr>
+        <tr id="add6543">
+          <td>
+            jimie
+          </td>
+          <td>
+            jimie@fake.coj
+          </td>
+          <td>
+            <select id="slt6543">
+              <option value="freshman">freshman</option>
+              <option value="senior">senior</option>
+            </select>
+          </td>
+          <td>
+            <button onclick="testAddStudent('6543')">add student</button>
+          </td>
+        </tr>
+        
+      </table>
+    </div>
     
     <script src="classScript.js"></script>
     
