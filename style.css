@@ -82,7 +82,7 @@ a{
   max-width: 300px;
   padding: 10px;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 17px;
 }
 
 /* Full-width input fields */
@@ -293,9 +293,9 @@ body {
 }
 
 .topnav a {
-  float: left;
-  display: block;
+  display: inline-block;
   color: #332d2d;
+  margin: auto;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
