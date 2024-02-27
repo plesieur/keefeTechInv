@@ -119,7 +119,7 @@ a{
 
 /* Add a background color to the logout button */
 .form-container .logout {
-  background-color: #e8b173;
+  background-color: #e66700;
   padding: 6px 10px;
 }
 /* Add some hover effects to buttons */
@@ -128,7 +128,8 @@ a{
 }
 
 .Manage{
-  background-color: #04AA6D;
+  background-color: #e66700;
+  padding: 6px 10px;
 }
 
 /* Increase the font size of the h1 element */
