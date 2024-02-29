@@ -5,17 +5,30 @@
   <meta charset="UTF-8">
   <title>Itemslist</title>
   <link href="itemstyle.css" rel="stylesheet" type="text/css"/>
-  <link rel="icon" type="image/x-icon" href="images/metalIcon.jpg">
+  <link rel="icon" type="image/x-icon" href="images/Logo.png">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
   
 <body>
 
   <nav>
+    <p>
+      <img src="images/Logo.png" width="170" alt="drawing of a welder">
+      KEEFE TECH INVENTORY
+    </p>
+
     <ul>
-      <li><a href="class.html">Classes</a></li>
-      <li><a href="items.html">Items</a></li>
+      <li><a href="class.html">CLASSES</a></li>
+      <li><a href="items.html">ITEMS</a></li>
     </ul>
+
+    <h4> prof</h4>
   </nav>
+
   <!--<div class="header">
          <h1 id="kti">KTI</h1>
     <a class="classes">classes</a>
@@ -149,14 +162,15 @@
       <label for="toolname"><b>Tool Name</b></label>
       <input type="text" placeholder="Enter Tool Name" name="name" required>
 
-      <label for="quantity"><b>Quantity</b></label>
+      <label for="quantity"><b>Quantity</b></label><!-- Should only be accepting numbers-->
       <input type="text" placeholder="Enter Quantity" name="quantity" required>
-
+      
+      <!--Could be a button to add the img | how will the img be uploaded?-->
       <label for="image"><b>Image</b></label>
       <input type="text" placeholder="Enter Image" name="image">
 
-      <button type="submit" class="btn" onclick="itemSpawn()">Create Tool</button> 
-      <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+      <button type="submit" class="btn" onclick="itemSpawn()">CREATE TOOL</button> 
+      <button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
     </form>
   </div>
 
