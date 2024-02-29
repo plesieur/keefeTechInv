@@ -9,9 +9,6 @@ body {
   background: #005cd4;
 }
 
-.black{
-  color: #000000;
-}
 /* Style the header */
 .header {
   height: 180px;
@@ -27,7 +24,7 @@ body {
   display: inline-flex;
 }
 
-a{
+.barButton{
   text-decoration: none;
   color: black;
 }
@@ -182,7 +179,7 @@ button {
   margin-bottom: -10px;
   background-color: #ffffff;
   color: rgb(143, 57, 0);;
-  width: 100px;
+  width: 150px;
 }
 
 
