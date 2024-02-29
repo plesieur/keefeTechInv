@@ -182,15 +182,9 @@ button {
   margin-bottom: -10px;
   background-color: #ffffff;
   color: rgb(143, 57, 0);;
+  width: 100px;
 }
 
-.loginw{
-  padding: 10px;
-  border-radius: 10%;
-  margin-bottom: 10px;
-  background-color: #ffffff;
-  color: rgb(143, 57, 0);;
-}
 
 .orange {
   background-color: rgb(255, 139, 62);
@@ -203,7 +197,8 @@ button {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 550px;
+  height: 800px;
   font-size: 30px;
   text-align: center;
 }
@@ -220,6 +215,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.spacing{
+  margin: 50px;
 }
 
 p {
