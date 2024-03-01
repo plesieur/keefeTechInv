@@ -1,0 +1,52 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.classTable, .classTable th:not(.check), .classTable td:not(.check), .classTable tbody{
+  border: 1px solid black;
+  border-style: solid none solid solid;
+  border-collapse: collapse;
+}
+
+.tabHead{
+  background-color: rgb(173, 173, 173);
+}
+
+.classTable th, .classTable tbody td{
+  width: 31.5%;
+}
+
+.check{
+  width: 7%;
+  border:1px solid black;
+  border-style: solid solid solid none;
+}
+
+
+.classTable{
+  width: 70%;
+  margin-left: auto;
+  margin-right:20px;
+  border-style: solid solid solid solid;
+}
+
+
+
+ .classDropDown{
+  display: none;
+}
+
+.student, .student td{
+  background-color: rgb(230, 230, 230);
+}
+
+.item{
+  background-color: rgb(207, 207, 207);
+}
+
+#stdTable , #stdTable th, #stdTable td{
+  border: 1px solid black;
+}
+
+
