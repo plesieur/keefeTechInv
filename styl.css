@@ -10,22 +10,15 @@ body {
 }
 
 /* Style the header */
-.orang{
-  color: #ff7b00;
-}
-
-/*-----------------------Style the header -------------------------*/
 .header {
   height: 180px;
   background: #ff9900;  
 }
-
 .prof{
   position: absolute;
   bottom: 200px;
   left: 180px;
 }
-
 .nav{
   list-style-type: none;
   display: inline-flex;
@@ -49,14 +42,13 @@ body {
   padding-bottom: -10px;
 }
 
-/*--------------------------pfp change button-------------------------*/
+/* pfp change button */
 .pfp{
   border-radius: 225px;
   background-color: white;
 }
 
-
-/* ----------Button used to open the contact form - fixed at the bottom of the page-------- */
+/* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
   background-color: #711345;
   color: white;
@@ -71,7 +63,7 @@ body {
   right: 28px;
 }
 
-/*--------------The popup form - hidden by default----------------*/
+/* The popup form - hidden by default */
 .form-popup {
   display: none;
   position: fixed;
@@ -82,15 +74,15 @@ body {
   border-radius: 25px;
 }
 
-/*----------------Add styles to the form container----------------*/
+/* Add styles to the form container */
 .form-container {
   max-width: 300px;
   padding: 10px;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 17px;
 }
 
-/*----------------Full-width input fields------------------- */
+/* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
   width: 100%;
   padding: 15px;
@@ -124,7 +116,7 @@ body {
 
 /* Add a background color to the logout button */
 .form-container .logout {
-  background-color: #e8b173;
+  background-color: #e66700;
   padding: 6px 10px;
 }
 /* Add some hover effects to buttons */
@@ -133,7 +125,8 @@ body {
 }
 
 .Manage{
-  background-color: #04AA6D;
+  background-color: #e66700;
+  padding: 6px 10px;
 }
 
 /* Increase the font size of the h1 element */
@@ -174,7 +167,6 @@ button {
   cursor: pointer;
 }
 
-
 .that {
   border-radius: 50%;
   height: 50px;
@@ -186,16 +178,14 @@ button {
   padding: 10px;
   border-radius: 10%;
   margin-bottom: -10px;
-}
-
-.loginw{
-  padding: 10px;
-  border-radius: 10%;
-  margin-bottom: 10px;
-}
-
-.background {
   background-color: #ffffff;
+  color: rgb(143, 57, 0);;
+  width: 150px;
+}
+
+
+.orange {
+  background-color: rgb(255, 139, 62);
   border: none;
   border-radius: 25px;
   padding: 20px;
@@ -205,7 +195,8 @@ button {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 300px;
+  width: 550px;
+  height: 800px;
   font-size: 30px;
   text-align: center;
 }
@@ -222,6 +213,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.spacing{
+  margin: 50px;
 }
 
 p {
@@ -294,15 +289,21 @@ p {
   background: #ff7d27; 
 }
 
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #ff9900;
 }
 
 .topnav a {
-  float: left;
-  display: block;
+  display: inline-block;
   color: #332d2d;
+  margin: auto;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -343,3 +344,4 @@ p {
     display: block;
     text-align: left;
   }
+}
