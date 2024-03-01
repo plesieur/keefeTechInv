@@ -9,9 +9,6 @@ body {
   background: #005cd4;
 }
 
-.black{
-  color: #000000;
-}
 /* Style the header */
 .header {
   height: 180px;
@@ -27,7 +24,7 @@ body {
   display: inline-flex;
 }
 
-a{
+.barButton{
   text-decoration: none;
   color: black;
 }
@@ -174,6 +171,7 @@ button {
   border-radius: 50%;
   height: 50px;
   width: 50px;
+  font-size: 50px;
 }
 
 .login{
@@ -182,15 +180,9 @@ button {
   margin-bottom: -10px;
   background-color: #ffffff;
   color: rgb(143, 57, 0);;
+  width: 150px;
 }
 
-.loginw{
-  padding: 10px;
-  border-radius: 10%;
-  margin-bottom: 10px;
-  background-color: #ffffff;
-  color: rgb(143, 57, 0);;
-}
 
 .orange {
   background-color: rgb(255, 139, 62);
@@ -203,7 +195,8 @@ button {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 550px;
+  height: 800px;
   font-size: 30px;
   text-align: center;
 }
@@ -220,6 +213,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.spacing{
+  margin: 50px;
 }
 
 p {
@@ -348,4 +345,3 @@ body {
     text-align: left;
   }
 }
-
