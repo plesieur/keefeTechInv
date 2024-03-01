@@ -171,7 +171,14 @@ function addStudent(year, stdId, email, name, outBound){
     col4Btn.innerHTML = "&#8595";
     col4Btn.addEventListener("click",function(){ dropDownClick(stdId)});
 
+    const col4Btn2 = document.createElement("button");
+    col4Btn2.id = "stdbin" + stdId;
+    col4Btn2.classList.add("dropbtn");
+    col4Btn2.innerHTML = "&#9003";
+    col4Btn2.addEventListener("click", function(){ deleteThis(stdId)})
+
     col4.appendChild(col4Btn);
+    col4.appendChild(col4Btn2);
 
     row1.appendChild(col4);
 
@@ -281,4 +288,37 @@ function addStudentToList(stdId, stdName, stdEmail){
   row.appendChild(col4);
   
   document.getElementById("stdTable").appendChild(row);
+}
+
+function deleteThis(stdId){
+  const div = document.createElement("div");
+  div.id = "confirm";
+  const para = document.createElement("p");
+  para.innerHTML = "are you sure";
+  div.appendChild(para);
+
+  const btnY = document.createElement("button");
+  btnY.innerHTML = "yes";
+  btnY.addEventListener("click",function(){ confirmDelete(stdId)});
+  div.appendChild(btnY);
+
+  const btnN = document.createElement("button");
+  btnN.innerHTML = "no";
+  btnN.addEventListener("click",function(){ dontDelete()});
+  div.appendChild(btnN);
+  document.body.appendChild(div);
+}
+
+function dontDelete(){
+  document.getElementById("confirm").remove();
+}
+
+function confirmDelete(stdId){
+  document.getElementById("confirm").remove();
+  document.getElementById(stdId).remove();
+  const delt = document.getElementsByClassName(stdId);
+  for(let i = 0; i < delt.length; i++){
+    console.log(delt[i]);
+    delt[i].remove();
+  }
 }
