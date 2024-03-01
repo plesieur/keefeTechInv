@@ -21,7 +21,7 @@ function dropDownClick(year) {
 }
 
 function getName(year, stdId, email, name, outBound){
-  if(classes.includes(year) && !studentIDs.includes(stdId)){
+  if (classes.includes(year) && !studentIDs.includes(stdId)){
     studentIDs.push(stdId);
 
     const row1 = document.createElement("tr");
@@ -39,10 +39,10 @@ function getName(year, stdId, email, name, outBound){
     row1.appendChild(col2);
 
     const col3 = document.createElement("td");
-    if(outBound > 0){
+    if (outBound > 0) {
       col3.innerHTML = outBound;
     }
-    else{
+    else {
       col3.innerHTML = "none";
     }
 

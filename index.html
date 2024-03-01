@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>index</title>
+  <title>items</title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
-  
-
-</head>
+  </head>
   
 <body>
   <!----------------------------------------------------------THIS WAS SUPPOSED TO BE THE SAME AS THE ITEMS' PAGE------------------------------------------------------------------->
@@ -16,8 +14,26 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
+    <button class="open-button" onclick="openForm()">Profile</button>
   </div>
- 
+  
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1><i>Profile</h1></i>
+
+      <h4 id="Name">Jam</h4>
+      <div class="prof">
+        <button type="button" class="pfp" onclick="closeForm()"><img src="profile.png" width="80" alt="placeholder"></button>
+      </div>
+      <h4 id="Email">jam.keefe</h4>
+      <h5 id="Account">Student Account</h5>
+      <button type="button" class="btn Manage account" onclick="closeForm()">Manage Account</button>
+      <a href="login.html">
+      <button type="button" class="btn logout" onclick="logout()">logout</button>
+      </a>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
   
   <script>
   function myFunction() {
@@ -109,29 +125,10 @@
   </div>  
 
   <div class="right">
-    <button class="">A</button>
+    <button class="that">+</button>
   </div>
           
-  <button class="open-button" onclick="openForm()">Profile</button>
 
-  <div class="form-popup" id="myForm">
-    <form action="/action_page.php" class="form-container">
-      <h1>Profile</h1>
-
-      <h4 id="Name">Jom</h4>
-      <div class="prof">
-        <button type="button" class="pfp" onclick="closeForm()"><img src="profile.png" width="80" alt="placeholder"></button>
-        <button type="button" class="btn" ><img src="profile.png" width="50" alt="placeholder"></button>
-      </div>
-      <h4 id="Email">jom.keefe</h4>
-      <h5 id="Account">Student Account</h5>
-      <h4>Email@jpkeefehs.org</h4>
-      <h5>Student Account</h5>
-      <button type="button" class="btn Manage account" onclick="closeForm()">Manage Account</button>
-      <button type="button" class="btn logout" onclick="closeForm()">logout</button>
-      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    </form>
-  </div>
     
   <script src="script"></script>
   <script> 
