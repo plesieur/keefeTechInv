@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Login</title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link rel="icon" type="image/x-icon" href="images/Logo.png">
 </head>
 <body>
-
   <div class="orange">
     <h1 class="spacing">KTI</h1>
     <form action="login.php" method="post">
@@ -17,8 +18,9 @@
       <div class="spacing">
         <label for="password">Password:</label>
         <input type="password" value="" id="myInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
-        <p class="show"><input type="checkbox" onclick="myFunction()">Show Password</p>
       </div>
+      <p class="show"><input type="checkbox" onclick="myFunction()">Show Password</p>
+      
       <div id="message">
         <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
         <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
