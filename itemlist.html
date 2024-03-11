@@ -2,99 +2,160 @@
 <html>
 
 <head>
-  <title>items</title>
+  <meta charset="UTF-8">
+  <title>Itemslist</title>
   <link href="itemstyle.css" rel="stylesheet" type="text/css"/>
-  <link rel="icon" type="image/x-icon" href="metalIcon.jpg">
+  <link rel="icon" type="image/x-icon" href="images/Logo.png">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
   
 <body>
-  <div class="header">
-    
-    <!-- <h1 id="kti">KTI</h1>
+
+  <nav>
+    <p>
+      <img src="images/Logo.png" width="100" alt="drawing of a welder">
+      Keefe Tech Inventory
+    </p>
+
+    <br>
+
+    <!---<ul>
+      <li><a href="class.html">CLASSES</a></li>
+      <li><a href="items.html">ITEMS</a></li>
+    </ul>-->
+
+  </nav>
+
+  <!--<div class="header">
+         <h1 id="kti">KTI</h1>
     <a class="classes">classes</a>
    <a class="items">items</a>"
 
     <div id="profile">
       <img src="profile.png" alt="profile" width="50px" height="50px">
     </div>
-    <a href="login.html">login</a>-->
-  </div>
-  <div class="grid-container">
-    
+    <a href="login.html">login</a>
+  </div>-->
+
+  <div class="grid-container">    
     <div class="grid-item">
+
       <div class="border">
         <p>Hammer</p>
-      </div><img src="hammer.jpg"
-      alt="hammer" width="100">
+
+      </div>
+      <img src="images/hammer.jpg" alt="hammer" width="100">
+
     </div>
+
     <div class="grid-item">
       <div class="border">
         <p>Welder</p>
-      </div><img src="hammer.jpg"
-      alt="hammer" width="100">
+
+      </div>
+      <img src="images/hammer.jpg" alt="hammer" width="100">
+
     </div>
-    <div class="grid-item">
+
+    <div class="grid-item">      
       <div class="border">
-      <p>Sweater</p>
-      </div><img src="hammer.jpg"
-      alt="hammer" width="100">
+       <p>Sweater</p>
+
+      </div>
+      <img src="images/hammer.jpg" alt="hammer" width="100">
+
     </div>  
+
     <div class="grid-item">
       <div class="border">
-      <p>destroyer</p>
-      </div><img src="hammer.jpg"
-      alt="hammer" width="100">
+       <p>destroyer</p>
+
+      </div>
+      <img src="images/hammer.jpg" alt="hammer" width="100">
+
     </div>
+
     <div class="grid-item">
       <div class="border">
-      <p>Among</p>
-      </div><img src="hammer.jpg"
-      alt="hammer" width="100">
+       <p>Among</p>
+
+      </div>
+      <img src="images/hammer.jpg" alt="hammer" width="100">
+
     </div>
-    <div class="grid-item">
+
+    <div class="grid-item">      
       <div class="border">
-      <p>Us</p>
-      </div><img src="hammer.jpg"
-      alt="hammer" width="100">
+       <p>Us</p>
+
+      </div>
+      <img src="images/hammer.jpg" alt="hammer" width="100">
+      
     </div> 
+
     <div class="grid-item">
       <div class="border">
-      <p>Metal</p>
-      </div><img src="hammer.jpg"
-      alt="hammer" width="100">
+       <p>Metal</p>
+
+      </div>
+      <img src="images/hammer.jpg" alt="hammer" width="100">
+
     </div>
+
     <div class="grid-item">
       <div class="border">
-      <p>Gear</p>
-      </div><img src="hammer.jpg"
-      alt="hammer" width="100"></div>
+       <p>Gear</p>
+
+      </div>
+      <img src="images/hammer.jpg" alt="hammer" width="100">
+
+    </div>
+
     <div class="grid-item">
       <div class="border">
-      <p>Rising</p>
-      </div><img
-      src="hammer.jpg"
-      alt="hammer" width="100"></div>  
+       <p>Rising</p>
+
+      </div>
+      <img src="images/hammer.jpg" alt="hammer" width="100">
+
+    </div>  
+
     <div class="grid-item">
       <div class="border">
-      <p>Jack</p>
-      </div><img
-      src="hammer.jpg"
-      alt="hammer" width="100"></div>
+       <p>Jack</p>
+       
+      </div>
+      <img src="images/hammer.jpg" alt="hammer" width="100">
+
+    </div>
+
     <div class="grid-item">
       <div class="border">
-      <p>Jayden</p>
-      </div><img
-      src="hammer.jpg"
-      alt="hammer" width="100"></div>
+        <p>Jayden</p>
+
+      </div>
+      <img src="images/hammer.jpg" alt="hammer" width="100">
+    
+    </div>
+
     <div class="grid-item">
+
       <div class="borde6r">
       <p>Lucas</p>
-      </div><img
-      src="hammer.jpg"
-      alt="hammer" width="100">
-  </div>  
-  
-  <button class="tool-button" onclick="openForm()">+</button>
+      
+      </div>
+      <img src="images/hammer.jpg" alt="hammer" width="100">
+       
+     </div>  
+     
+  </div>
+
+  <button class="tool-button" onclick="openForm()"> + </button>
+
   <div class="tool-popup" id="myForm">
     <form class="tool-container">
       <h1>New Tool</h1>
@@ -102,14 +163,15 @@
       <label for="toolname"><b>Tool Name</b></label>
       <input type="text" placeholder="Enter Tool Name" name="name" required>
 
-      <label for="quantity"><b>Quantity</b></label>
+      <label for="quantity"><b>Quantity</b></label><!-- Should only be accepting numbers-->
       <input type="text" placeholder="Enter Quantity" name="quantity" required>
-
+      
+      <!--Could be a button to add the img | how will the img be uploaded?-->
       <label for="image"><b>Image</b></label>
       <input type="text" placeholder="Enter Image" name="image">
 
-      <button type="submit" class="btn" onclick="itemSpawn()">Create Tool</button> 
-      <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+      <button type="submit" class="btn" onclick="itemSpawn()">CREATE TOOL</button> 
+      <button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
     </form>
   </div>
 
