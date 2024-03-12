@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link href="styl.css" rel="stylesheet" type="text/css"/>
+  <link href="loginpage.css" rel="stylesheet" type="text/css"/>
   <link rel="icon" type="image/x-icon" href="images/Logo.png">
 </head>
 <body>
@@ -11,15 +11,15 @@
     <h1 class="spacing">KTI</h1>
     <form action="login.php" method="post">
       <div class="spacing">
-        <label  for="username">Username:</label>
+        <label  for="username"><b>Email:</label></b>
         <input type="email" id="email" name="email"  required><br><br>
       </div>
 
       <div class="spacing">
-        <label for="password">Password:</label>
+        <label for="password"><b>Password:</label></b>
         <input type="password" value="" id="myInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
       </div>
-      <p class="show"><input type="checkbox" onclick="myFunction()">Show Password</p>
+      <p class="show"><input type="checkbox" onclick="myFunction()"><b>Show Password</p></b>
       
       <div id="message">
         <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
@@ -30,7 +30,7 @@
       
       
       <br></br>
-      <button class="login" type="submit">Login</button> 
+      <button class="login" type="submit"><b>Login</button></b> 
       <br></br>
   </div>
 
@@ -101,37 +101,6 @@
       }
     }
   </script>  
-      <style>
-      #message {
-      display:none;
-      background: #f1f1f1;
-      color: #000;
-      position: relative;
-      padding: 20px;
-      margin-top: 10px;
-    }
-    
-    #message p {
-      padding: 10px 35px;
-      font-size: 18px;
-    }      
-    .valid {
-      color: green;
-    }   
-    .valid:before {
-      position: relative;
-      left: -35px;
-      content: "✔";
-    }   
-    .invalid {
-      color: red;
-    }   
-    .invalid:before {
-      position: relative;
-      left: -35px;
-      content: "✖";
-    }  
-  </style>
 
   
   
