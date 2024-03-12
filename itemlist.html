@@ -23,22 +23,36 @@
 
     <br>
 
-    <!---<ul>
-      <li><a href="class.html">CLASSES</a></li>
-      <li><a href="items.html">ITEMS</a></li>
-    </ul>-->
+    <div class="topnav" id="myTopnav">
+      <a href="#classes">CLASSES</a>
+      <a href="#items">ITEMS</a>
+      <a class="links" href="login.html">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <button class="open-button" onclick="openForm()">Profile</button>
+    </div>
 
   </nav>
 
-  <!--<div class="header">
-         <h1 id="kti">KTI</h1>
-    <a class="classes">classes</a>
-   <a class="items">items</a>"
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1><i>Profile</h1></i>
 
-    <div id="profile">
-      <img src="profile.png" alt="profile" width="50px" height="50px">
-    </div>
-    <a href="login.html">login</a>-->
+      <h4 id="Name">Jam</h4>
+      <div class="prof">
+        <button type="button" class="pfp" onclick="closeForm()"><img src="images/profile.png" width="80" alt="placeholder"></button>
+      </div>
+      <h4 id="Email">jam.keefe</h4>
+      <h5 id="Account">Student Account</h5>
+      <button type="button" class="btn Manage account" onclick="closeForm()">Manage Account</button>
+      <a href="login.html">
+      <button type="button" class="btn logout" onclick="logout()">logout</button>
+      </a>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
   </div>
   <div class="grid-container"> <!-- Grid Container For The Script To Append To -->
 
