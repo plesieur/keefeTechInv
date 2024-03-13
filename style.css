@@ -379,6 +379,7 @@ p {
     display: block;
     text-align: left;
   }
+<<<<<<< HEAD
 
 
 /*-----------------MERGING---------------------*/
@@ -504,3 +505,6 @@ button {
 .tool-container .btn:hover, .open-button:hover {
   background-color: #ff9900;
 } */
+=======
+}
+>>>>>>> 075bb4cb009f593d7917c8f3e55c2fa457a063fa
