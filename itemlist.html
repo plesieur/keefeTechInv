@@ -23,29 +23,43 @@
 
     <br>
 
-    <!---<ul>
-      <li><a href="class.html">CLASSES</a></li>
-      <li><a href="items.html">ITEMS</a></li>
-    </ul>-->
+    <div class="topnav" id="myTopnav">
+      <a href="class.html">CLASSES</a>
+      <a href="itemlist.html">ITEMS</a>
+      <a class="links" href="login.html">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <button class="open-button" onclick="openForm()">Profile</button>
+    </div>
 
   </nav>
 
-  <!--<div class="header">
-         <h1 id="kti">KTI</h1>
-    <a class="classes">classes</a>
-   <a class="items">items</a>"
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1><i>Profile</h1></i>
 
-    <div id="profile">
-      <img src="profile.png" alt="profile" width="50px" height="50px">
-    </div>
-    <a href="login.html">login</a>-->
+      <h4 id="Name">Jam</h4>
+      <div class="prof">
+        <button type="button" class="pfp" onclick="closeForm()"><img src="images/profile.png" width="80" alt="placeholder"></button>
+      </div>
+      <h4 id="Email">jam.keefe</h4>
+      <h5 id="Account">Student Account</h5>
+      <button type="button" class="btn Manage account" onclick="closeForm()">Manage Account</button>
+      <a href="login.html">
+      <button type="button" class="btn logout" >logout</button>
+      </a>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
   </div>
+
+  
   <div class="grid-container"> <!-- Grid Container For The Script To Append To -->
 
   </div>  
   
-  <button class="tool-button" onclick="openForm()">+</button>
-  <div class="tool-popup" id="myForm">
+  <button class="tool-button" onclick="openItemForm()">+</button>
+  <div class="tool-popup" id="myItemForm">
     <form class="tool-container">
       <h1>New Tool</h1>
 
@@ -61,7 +75,7 @@
       <div id="imagePreview"></div>
 
       <button type="button" class="btn" onclick="itemSpawn()">Create Tool</button> 
-      <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+      <button type="button" class="btn cancel" onclick="closeItemForm()">Cancel</button>
     </form>
   </div>
 
@@ -100,6 +114,14 @@
           }
         }
 
+        function openItemForm() {
+          document.getElementById("myItemForm").style.display = "block";
+        }
+
+        function closeItemForm() {
+          document.getElementById("myItemForm").style.display = "none";
+        }
+        
         function openForm() {
           document.getElementById("myForm").style.display = "block";
         }
@@ -107,7 +129,7 @@
         function closeForm() {
           document.getElementById("myForm").style.display = "none";
         }
-        
+
         function fileValidation() { //Alert Invalid File Type Keeps Popping Up, No Preview Div Currently
           var imageConvert = document.getElementById('imageInput');
           var imageValue = imageConvert.value;
