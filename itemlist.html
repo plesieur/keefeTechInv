@@ -122,6 +122,14 @@
           document.getElementById("myItemForm").style.display = "none";
         }
         
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+
         function fileValidation() { //Alert Invalid File Type Keeps Popping Up, No Preview Div Currently
           var imageConvert = document.getElementById('imageInput');
           var imageValue = imageConvert.value;
