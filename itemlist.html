@@ -14,22 +14,16 @@
 </head>
   
 <body>
-
   <nav>
-    <p>
-      <img src="images/Logo.png" width="100" alt="drawing of a welder">
+    <p class="navMainText">
+      <img id="navImage" src="images/Logo.png" width="100" alt="drawing of a welder">
       Keefe Tech Inventory
     </p>
-
-    <br>
 
     <div class="topnav" id="myTopnav">
       <a href="class.html">CLASSES</a>
       <a href="itemlist.html">ITEMS</a>
       <a class="links" href="login.html">Login</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
       <button class="open-button" onclick="openForm()">Profile</button>
     </div>
 
@@ -53,12 +47,13 @@
     </form>
   </div>
 
-  
-  <div class="grid-container"> <!-- Grid Container For The Script To Append To -->
+  <!-- Grid Container For The Script To Append To -->
+  <div class="grid-container "> 
 
   </div>  
   
-  <button class="tool-button" onclick="openItemForm()">+</button>
+
+  <button class="tool-button buttonOrange" onclick="openItemForm()">+</button>
   <div class="tool-popup" id="myItemForm">
     <form class="tool-container">
       <h1>New Tool</h1>
