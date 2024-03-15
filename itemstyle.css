@@ -52,11 +52,12 @@ nav img{
     padding-right: 60px;
 }
 
+/*-------- SEARCH BAR ---------*/
 .searchBar{
     border-style: none;
     width: 350px;
     height: 32px;
-    margin: 58px 0px 0px 70px; 
+    margin: 38px 0px 0px 70px; 
     border-radius: 20px;
 }
 
@@ -64,6 +65,7 @@ input {
     background-color: rgb(240, 240, 240);
 }
 
+/*------- Page links ----------*/
 ul{
     margin-top: 70px;
     margin-left: 40px;
@@ -87,6 +89,19 @@ ul a{
     padding-bottom: -10px;
 }
 
+/* Button used to open the contact form - fixed at the bottom of the page */
+.profile-button {
+    background-color: #711345;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+}
+
 .profDisplay{
     position: absolute;
     bottom: 200px;
@@ -98,10 +113,10 @@ ul a{
     background-color: white;
 }
 
+/*------------- side menu ---------------------*/
 .barMenu {
     display: inline-block;
     cursor: pointer;
-    float: right;
 }
 
 .bar1, .bar2, .bar3 {
@@ -122,20 +137,6 @@ ul a{
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
-}
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-.profile-button {
-    background-color: #711345;
-    color: white;
-    padding: 16px 20px;
-    border-radius: 50%;
-    height: 70px;
-    width: 70px;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-
 }
 
 .form-popup {
