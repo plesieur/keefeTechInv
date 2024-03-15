@@ -13,26 +13,79 @@ body {
     background: #005cd4;
 }
 
-.header {
-    padding: 40px;
-    background: #ff9900;
-    color: #3936f7;
-    border: 1px solid white;
+a{
+    text-decoration: none;
+    color: rgb(36, 54, 114);
 }
 
-/* Button used to open the contact form - fixed at the bottom of the page 
-.profile-button {
-    position: absolute;
-    background-color: #711345;
-    color: white;
-    padding: 16px 20px;
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
-    cursor: pointer;
-    opacity: 0.8;
-    margin-right: -200%;
+/* --------------- nav bar ------------------- */
+nav{
+    position: fixed;
+    background-color: #ff9900;
+    width: 100%;  
+    height: 125px; 
+    font-family: "Oswald", sans-serif;
+    list-style-type: none;
+    display: inline-flex;
+}  
+
+nav img{
+    margin-bottom: -30px;
 }
+
+.logo{
+    font-size: 105px;
+    float: left;
+    padding-left: 95px;
+    margin-top: 15px;
+    color: #005cd4;
+}
+
+.title{
+    display: inline;
+    margin-top: 0px;
+    font-size: 65px;
+    float: left;
+    margin-left: 30px;
+    
+    padding-right: 60px;
+}
+
+.searchBar{
+    border-style: none;
+    width: 350px;
+    height: 32px;
+    margin: 58px 0px 0px 70px; 
+    border-radius: 20px;
+}
+
+input {
+    background-color: rgb(240, 240, 240);
+}
+
+ul{
+    margin-top: 70px;
+    margin-left: 40px;
+    float: left;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    padding-left: 40px;
+}
+
+ul a{
+    text-decoration: none;
+    color: rgb(5, 10, 59);
+    font-size: 30px;
+}
+
+.links{
+    font-size: 30px;
+    padding-bottom: -10px;
+}
+
 .profDisplay{
     position: absolute;
     bottom: 200px;
@@ -41,14 +94,15 @@ body {
   
 .profilePage{
     border-radius: 200px;
+.profilePage{
+    border-radius: 200px;
     background-color: white;
-}*/
+}
 
-/*------------- side menu ---------------------
 .barMenu {
     display: inline-block;
     cursor: pointer;
-    margin-right: -100%;
+    float: right;
 }
 
 .bar1, .bar2, .bar3 {
@@ -69,7 +123,21 @@ body {
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
-}*/
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.profile-button {
+    background-color: #711345;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+
+}
 
 .form-popup {
     display: none;
@@ -80,7 +148,10 @@ body {
     z-index: 9;
     border-radius: 25px;
 }
+}
   
+/*----------------Add styles to the form container----------------*/
+.form-container {
 /*----------------Add styles to the form container----------------*/
 .form-container {
     max-width: 300px;
@@ -152,29 +223,6 @@ body {
     color: rgba(255, 255, 255, 0.959);
 }
 
-nav{
-    position: fixed;
-    background-color: #ff9900;
-    width: 100%;  
-    height: 100px; 
-    font-family: "Oswald", sans-serif;
-    list-style-type: none;
-    display: inline-flex;
-}  
-
-nav img{
-    margin-bottom: -25px;
-}
-
-.navMainText {
-    display: inline;
-    margin-top: 0px;
-    font-size: 60px;
-    float: left;
-    margin-left: 30px;
-    color: rgb(36, 54, 114);
-    padding-right: 60px;
-}
 
 
 /* For Item Cards*/
