@@ -21,7 +21,7 @@
     </p>
 
     <div class="topnav" id="myTopnav">
-      <a href="class.html">CLASSES</a>
+      <!--<a href="class.html">CLASSES</a>
       <a href="itemlist.html">ITEMS</a>
       <a class="links" href="login.html">Login</a>
       <button class="open-button" onclick="openForm()">Profile</button>
@@ -29,13 +29,14 @@
       
   </nav>
 
+  <!-- INSIDE THE PROFILE BOX -->
   <div class="form-popup" id="myForm">
     <form action="/action_page.php" class="form-container">
       <h1><i>Profile</h1></i>
 
-      <h4 id="Name">Jam</h4>
-      <div class="prof">
-        <button type="button" class="pfp" onclick="closeForm()"><img src="images/profile.png" width="80" alt="placeholder"></button>
+      <!--<h4 id="Name">Jam</h4>-->
+      <div class="profDisplay">
+        <button type="button" class="profilePage" onclick="closeForm()"><img src="images/profile.png" width="80" alt="placeholder"></button>
       </div>
       <h4 id="Email">jam.keefe</h4>
       <h5 id="Account">Student Account</h5>
@@ -148,6 +149,10 @@
             }
           }
 
+        }
+
+        function myFunction(x) {
+         x.classList.toggle("change");
         }
       </script>
 
