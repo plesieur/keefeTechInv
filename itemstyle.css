@@ -11,7 +11,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background: #005cd4;
-    
 }
 
 .header {
@@ -21,8 +20,9 @@ body {
     border: 1px solid white;
 }
 
-/* Button used to open the contact form - fixed at the bottom of the page */
+/* Button used to open the contact form - fixed at the bottom of the page 
 .profile-button {
+    position: absolute;
     background-color: #711345;
     color: white;
     padding: 16px 20px;
@@ -31,9 +31,8 @@ body {
     width: 60px;
     cursor: pointer;
     opacity: 0.8;
-    position: fixed;
+    margin-right: -200%;
 }
-
 .profDisplay{
     position: absolute;
     bottom: 200px;
@@ -43,12 +42,13 @@ body {
 .profilePage{
     border-radius: 200px;
     background-color: white;
-}
+}*/
 
-/*------------- side menu ---------------------*/
+/*------------- side menu ---------------------
 .barMenu {
     display: inline-block;
     cursor: pointer;
+    margin-right: -100%;
 }
 
 .bar1, .bar2, .bar3 {
@@ -69,7 +69,7 @@ body {
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
-}
+}*/
 
 .form-popup {
     display: none;
