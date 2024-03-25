@@ -30,7 +30,7 @@ nav{
 }  
 
 .nav-container{
-    display: grid;
+    display: inline-grid;
     grid-template-columns: auto auto auto;
     padding: 6px;
 }
@@ -45,10 +45,6 @@ nav img{
 
 #item1{
     width: 720px;
-}
-
-#item2{
-    left: -500px;
 }
 
 
