@@ -11,39 +11,85 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background: #005cd4;
-    
 }
 
-/* Style the header 
-.header {
-    padding: 40px;
-    background: #ff9900;
-    color: #3936f7;
-    border: 1px solid white;
-}*/
+a{
+    text-decoration: none;
+    color: rgb(36, 54, 114);
+}
 
+/* --------------- NAV BAR ------------------- */
 nav{
     position: fixed;
     background-color: #ff9900;
     width: 100%;  
-    height: 100px; 
+    height: 125px; 
     font-family: "Oswald", sans-serif;
+    list-style-type: none;
+    display: inline;
 }  
 
-nav img{
-    margin-bottom: -25px;
+.nav-container{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 6px;
 }
 
-nav p{
-    display: inline;
+nav img{
+    margin-bottom: -30px;
+}
+
+.nav-item{
+    border: 1px solid forestgreen;
+}
+
+#item1{
+    width: 720px;
+}
+
+
+/*HOTBAR STUFF
+.topnav {
+    overflow: hidden;
+    background-color: #ff9900;
+}
+
+.topnav a {
+    display: inline-block;
+    color: #332d2d;
+    margin: auto;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #005cd4;
+    color: rgba(255, 255, 255, 0.959);
+}*/
+
+.title{
     margin-top: 0px;
-    font-size: 60px;
+    font-size: 65px;
     float: left;
     margin-left: 30px;
-    color: rgb(36, 54, 114);
-    padding-right: 60px;
 }
 
+/*-------- SEARCH BAR ---------*/
+.searchBar{
+    border-style: none;
+    width: 350px;
+    height: 32px;
+    margin-top: 45px; 
+    border-radius: 20px;
+}
+
+input {
+    background-color: rgb(240, 240, 240);
+}
+
+/*------- Page links ----------
 ul{
     margin-top: 70px;
     margin-left: 40px;
@@ -60,45 +106,146 @@ ul a{
     text-decoration: none;
     color: rgb(5, 10, 59);
     font-size: 30px;
+}*/
+
+/* Button used to open the contact form - fixed at the bottom of the page 
+.profile-button {
+    position: absolute;
+    background-color: #711345;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    opacity: 0.8;
+    margin-right: -200%;
+}
+.profDisplay{
+    position: absolute;
+    bottom: 200px;
+    left: 180px;
+}
+  
+.profilePage{
+    border-radius: 200px;
+    background-color: white;
+}*/
+
+/*------------- side menu ---------------------
+.barMenu {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: -100%;
 }
 
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
 
-/* Increase the font size of the h1 element */
-h1 {
-    font-size: 40px;
-    color: #ff9900;
-} 
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
 
-.border {
-    border: 1px solid rgba(0, 0, 0, 0.8);
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}*/
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
     border-radius: 25px;
 }
   
+/*----------------Add styles to the form container----------------*/
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+  
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-bottom:10px;
+    opacity: 0.8;
+    width: 100%;
+}
+  
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+    padding: 16px 20px;
+}
+  
+/* Add a background color to the logout button */
+.form-container .logout {
+    background-color: #e66700;
+    padding: 6px 10px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/* For Item Cards*/
+.border {
+    border: 3px solid black;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+}
 .grid-container {
     margin: auto;
     display: grid;
     width: 1500px;
-    grid-template-columns:  auto auto auto auto;
-    padding: 75px;
+    grid-template-columns:  25% 25% 25% 25%;
+    padding: 175px;
+    padding-top: 50px;
 }
-
 .grid-item {
     border-radius: 25px;
-    background-color: rgba(255, 255, 255);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgb(255, 108, 11);
+    border: 3px solid black;
     padding: 20px;
     margin: 85px 60px 30px 60px;
     width: 200px;
     font-size: 30px;
     text-align: center;
 }
-  
-.show{
-  font-size: 10px;
-  margin-top: -35px;
-}
 
-button {
+.buttonOrange {
     background-color: #ff9900;
     border: none;
     color: #ffffff;
@@ -109,7 +256,7 @@ button {
     margin: 4px 2px;
     cursor: pointer;
 }
-  
+
 .tool-button{ 
     border-radius: 50%;
     height: 65px;
@@ -120,20 +267,22 @@ button {
     bottom: 17px;
     right: 20px;
 }
-  
+
 .tool-popup {
     display: none;
     position: fixed;
     bottom: 0;
     right: 15px;
+    border: 5px solid orange;
     z-index: 9;
+    border-radius: 25px;
 }
   
 .tool-container {
     max-width: 300px;
     padding: 10px;
-    background-color: white;
-    border-radius: 20px;
+    background-color: orangered;
+    border-radius: 15px;
 }
   
 .tool-container input[type=text], .tool-container input[type=password] {
@@ -168,5 +317,5 @@ button {
 }
   
 .tool-container .btn:hover, .open-button:hover {
-    background-color: #ff9900;
-} 
+    background-color: #0564e0;
+}
