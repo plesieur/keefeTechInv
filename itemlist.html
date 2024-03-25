@@ -14,178 +14,143 @@
 </head>
   
 <body>
+  <nav class="nav-container">
+    <div class="nav-item" id="item1"> 
+        <a class="title" href="itemlist.html"><img src="images/Logo.png" width="125" alt="drawing of a welder">
+        Keefe Tech Inventory</a>
+    </div>
 
-  <nav>
-    <p>
-      <img src="images/Logo.png" width="100" alt="drawing of a welder">
-      Keefe Tech Inventory
+    <div class="nav-item" id="item2"> 
+      <form  action="/action_page.php">
+        <input class="searchBar" type="text" placeholder="Search..." name="search">
+      </form>
+    </div>
+
+    <div class="nav-item" id="item3"> 
+      111
+    </div>
+   <!-- <p class="title">
+      <a href="itemlist.html"><img src="images/Logo.png" width="125" alt="drawing of a welder">
+      Keefe Tech Inventory</a>
     </p>
 
-    <br>
+    <div class="topnav" id="myTopnav">
+      <a href="class.html">CLASSES</a>
+      <a href="itemlist.html">ITEMS</a>
+      <a class="links" href="login.html">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>-->
+      
+      <!-- FIX APPEARANCE 
+      <form  action="/action_page.php">
+        <input class="searchBar" type="text" placeholder="Search..." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>-->
 
-    <!---<ul>
-      <li><a href="class.html">CLASSES</a></li>
-      <li><a href="items.html">ITEMS</a></li>
-    </ul>-->
+      <!-- FIX APPEARANCE 
+      <button class="profile-button" onclick="openForm()">Profile</button>-->
+
+      <!-- ADD SIDE OVERLAY NAVIGATION W3C SCHOOLS
+      <div class="barMenu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>-->
+
+    </div>
 
   </nav>
 
-  <!--<div class="header">
-         <h1 id="kti">KTI</h1>
-    <a class="classes">classes</a>
-   <a class="items">items</a>"
+  <!-- INSIDE THE PROFILE BOX -->
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1><i>Profile</h1></i>
 
-    <div id="profile">
-      <img src="profile.png" alt="profile" width="50px" height="50px">
-    </div>
-    <a href="login.html">login</a>
-  </div>-->
-
-  <div class="grid-container">    
-    <div class="grid-item">
-
-      <div class="border">
-        <p>Hammer</p>
-
+      <!--<h4 id="Name">Jam</h4>-->
+      <div class="profDisplay">
+        <button type="button" class="profilePage" onclick="closeForm()"><img src="images/profile.png" width="80" alt="placeholder"></button>
       </div>
-      <img src="images/hammer.jpg" alt="hammer" width="100">
-
-    </div>
-
-    <div class="grid-item">
-      <div class="border">
-        <p>Welder</p>
-
-      </div>
-      <img src="images/hammer.jpg" alt="hammer" width="100">
-
-    </div>
-
-    <div class="grid-item">      
-      <div class="border">
-       <p>Sweater</p>
-
-      </div>
-      <img src="images/hammer.jpg" alt="hammer" width="100">
-
-    </div>  
-
-    <div class="grid-item">
-      <div class="border">
-       <p>destroyer</p>
-
-      </div>
-      <img src="images/hammer.jpg" alt="hammer" width="100">
-
-    </div>
-
-    <div class="grid-item">
-      <div class="border">
-       <p>Among</p>
-
-      </div>
-      <img src="images/hammer.jpg" alt="hammer" width="100">
-
-    </div>
-
-    <div class="grid-item">      
-      <div class="border">
-       <p>Us</p>
-
-      </div>
-      <img src="images/hammer.jpg" alt="hammer" width="100">
-      
-    </div> 
-
-    <div class="grid-item">
-      <div class="border">
-       <p>Metal</p>
-
-      </div>
-      <img src="images/hammer.jpg" alt="hammer" width="100">
-
-    </div>
-
-    <div class="grid-item">
-      <div class="border">
-       <p>Gear</p>
-
-      </div>
-      <img src="images/hammer.jpg" alt="hammer" width="100">
-
-    </div>
-
-    <div class="grid-item">
-      <div class="border">
-       <p>Rising</p>
-
-      </div>
-      <img src="images/hammer.jpg" alt="hammer" width="100">
-
-    </div>  
-
-    <div class="grid-item">
-      <div class="border">
-       <p>Jack</p>
-       
-      </div>
-      <img src="images/hammer.jpg" alt="hammer" width="100">
-
-    </div>
-
-    <div class="grid-item">
-      <div class="border">
-        <p>Jayden</p>
-
-      </div>
-      <img src="images/hammer.jpg" alt="hammer" width="100">
-    
-    </div>
-
-    <div class="grid-item">
-
-      <div class="borde6r">
-      <p>Lucas</p>
-      
-      </div>
-      <img src="images/hammer.jpg" alt="hammer" width="100">
-       
-     </div>  
-     
+      <h4 id="Email">jam.keefe</h4>
+      <h5 id="Account">Student Account</h5>
+      <button type="button" class="btn Manage account" onclick="closeForm()">Manage Account</button>
+      <a href="login.html">
+      <button type="button" class="btn logout" >logout</button>
+      </a>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
   </div>
 
-  <button class="tool-button" onclick="openForm()"> + </button>
+  <!-- Grid Container For The Script To Append To -->
+  <div class="grid-container "> 
+    <img src="images/testing.jpg">
+  </div>  
+  
 
-  <div class="tool-popup" id="myForm">
+  <button class="tool-button buttonOrange" onclick="openItemForm()">+</button>
+  <div class="tool-popup" id="myItemForm">
     <form class="tool-container">
       <h1>New Tool</h1>
 
       <label for="toolname"><b>Tool Name</b></label>
-      <input type="text" placeholder="Enter Tool Name" name="name" required>
+      <input type="text" placeholder="Enter Tool Name" name="name" id="nameInput">
 
-      <label for="quantity"><b>Quantity</b></label><!-- Should only be accepting numbers-->
-      <input type="text" placeholder="Enter Quantity" name="quantity" required>
-      
-      <!--Could be a button to add the img | how will the img be uploaded?-->
-      <label for="image"><b>Image</b></label>
-      <input type="text" placeholder="Enter Image" name="image">
+      <label for="quantity"><b>Quantity</b></label>
+      <input type="text" placeholder="Enter Quantity" name="quantity" id="quantityInput">
 
-      <button type="submit" class="btn" onclick="itemSpawn()">CREATE TOOL</button> 
-      <button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+      <label for="myfile"><b>Image</b></label>
+      <input type="file" id="imageInput" onchange="return fileValidation()">
+
+      <div id="imagePreview"></div>
+
+      <button type="button" class="btn" onclick="itemSpawn()">Create Tool</button> 
+      <button type="button" class="btn cancel" onclick="closeItemForm()">Cancel</button>
     </form>
   </div>
 
       <script>
-        //Create Tool currently sends user to a new page which isnt wanted
+        var x = ''
         function itemSpawn() {
-            //If statement needed to check if Tool Name & Quantity is filled out before spawning
-         var x = document.createElement("INPUT");
-         x.setAttribute("class", "grid-item");
-         x.setAttribute("type", "button");
-         x.setAttribute("value", "New Card");
-         document.body.appendChild(x);
+          var spawnCondition = document.getElementById("nameInput") //Simple check to make sure user input proper values into the card create
+          var spawnCondition2 = document.getElementById("quantityInput")
+      
+          if (spawnCondition.value != "" && spawnCondition2.value != "") {
+            var x = document.createElement("Button"); //Main Button
+            const newDiv = document.createElement("div");
+            const theP = document.createElement("p");
+            const imageCard = document.createElement("div");
+
+            newDiv.classList.add("border");
+            imageCard.classList.add("imageCard");
+            x.setAttribute("class", "grid-item");
+
+            var txtConvert = document.getElementById('nameInput').value;
+            theP.innerText = txtConvert; //Gets Inputted Name And Puts It On Card
+
+            newDiv.appendChild(theP); //Adds div with border for text into the main button
+            document.getElementsByClassName("grid-container")[0].appendChild(x);
+        
+            
+
+            x.appendChild(newDiv);
+            x.appendChild(imageCard);
+
+            spawnCondition.value = "";
+            document.getElementById("nameInput").value = spawnCondition.value;
+            document.getElementById("quantityInput").value = spawnCondition.value;
+            document.getElementById("imageInput").value = spawnCondition.value;
+            document.getElementById('imagePreview').innerHTML = '';
+          }
         }
 
+        function openItemForm() {
+          document.getElementById("myItemForm").style.display = "block";
+        }
+
+        function closeItemForm() {
+          document.getElementById("myItemForm").style.display = "none";
+        }
+        
         function openForm() {
           document.getElementById("myForm").style.display = "block";
         }
@@ -193,7 +158,35 @@
         function closeForm() {
           document.getElementById("myForm").style.display = "none";
         }
-        
+
+        function fileValidation() { //Alert Invalid File Type Keeps Popping Up, No Preview Div Currently
+          var imageConvert = document.getElementById('imageInput');
+          var imageValue = imageConvert.value;
+          var allowExtension = /(\.jpg|\.jpeg|\.png)$/i;
+            
+          if (!allowExtension.exec(imageValue)) {
+            alert('Invalid file type');
+            imageConvert.value = '';
+            return false;
+          }
+          else {
+            if (imageConvert.files && imageConvert.files[0]) {
+              var fileReader = new FileReader();
+              fileReader.onload = function(e) {
+                document.getElementById(
+                            'imagePreview').innerHTML = 
+                            '<img src="' + e.target.result
+                            + '"/>';
+              };
+              fileReader.readAsDataURL(imageConvert.files[0]);
+            }
+          }
+
+        }
+
+        function myFunction(x) {
+         x.classList.toggle("change");
+        }
       </script>
 
 </body>
