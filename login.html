@@ -37,7 +37,7 @@
     }
   }
     
-    var myInput = document.getElementById("psw");
+    var myInput = document.getElementById("password");
     var letter = document.getElementById("letter");
     var capital = document.getElementById("capital");
     var number = document.getElementById("number");
@@ -63,8 +63,9 @@
         letter.classList.remove("valid");
         letter.classList.add("invalid");
       }
+    }
+    
       
-   
       var upperCaseLetters = /[A-Z]/g;
       if (myInput.value.match(upperCaseLetters)) {  
         capital.classList.remove("invalid");
