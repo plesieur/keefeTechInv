@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -9,10 +13,46 @@ body {
   background: #005cd4;
 }
 
-/* Style the header */
-.orang{
-  color: #ff7b00;
+nav{
+  position: fixed;
+  background-color: #ff9900;
+  width: 100%;  
+  height: 100px; 
+  font-family: "Oswald", sans-serif;
+}  
+
+nav img{
+  margin-bottom: -25px;
 }
+
+nav p{
+  display: inline;
+  margin-top: 0px;
+  font-size: 60px;
+  float: left;
+  margin-left: 30px;
+  color: rgb(36, 54, 114);
+  padding-right: 60px;
+}
+
+ul{
+  margin-top: 70px;
+  margin-left: 40px;
+  float: left;
+}
+
+li{
+  list-style: none;
+  display: inline;
+  padding-left: 40px;
+}
+
+ul a{
+  text-decoration: none;
+  color: rgb(5, 10, 59);
+  font-size: 30px;
+}
+
 
 /*-----------------------Style the header -------------------------*/
 .header {
@@ -158,9 +198,7 @@ body {
   text-align: center;
 }
 
-.right{
-  margin-left: 380%;
-}
+
 button {
   background-color: rgb(255, 102, 0);
   border: none;
@@ -174,11 +212,12 @@ button {
 }
 
 
-.that {
+.addItem {
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  font-size: 50px;
+  height: 150px;
+  width: 150px;
+  font-size: 60px;
+
 }
 
 .login{
@@ -211,8 +250,11 @@ button {
 
 .addItem{
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
+  font-size: 50px;
+  text-align: center;
+  margin-right: -40%;
 }
 
 .box {
@@ -273,24 +315,18 @@ p {
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(255, 151, 55); 
-  border-radius: 10px;
+  background: #71afff; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff7d27; 
+  background: #969696; 
 }
 
 .topnav {
@@ -342,4 +378,132 @@ p {
     display: block;
     text-align: left;
   }
+<<<<<<< HEAD
+
+
+/*-----------------MERGING---------------------*/
+
+
+
+/* Style the header 
+.header {
+  padding: 40px;
+  background: #ff9900;
+  color: #3936f7;
+  border: 1px solid white;
+}*/
+
+
+
+
+/* Increase the font size of the h1 element */
+/*
+h1 {
+  font-size: 40px;
+  color: #ff9900;
+} 
+
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
 }
+
+.grid-container {
+  margin: auto;
+  display: grid;
+  width: 1500px;
+  grid-template-columns:  auto auto auto auto;
+  padding: 75px;
+}
+
+.grid-item {
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 85px 60px 30px 60px;
+  width: 200px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.show{
+font-size: 10px;
+margin-top: -35px;
+}
+
+button {
+  background-color: #ff9900;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.tool-button{ 
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  font-size: 40px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 17px;
+  right: 20px;
+}
+
+.tool-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+}
+
+.tool-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.tool-container input[type=text], .tool-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.tool-container input[type=text]:focus, .tool-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.tool-container .btn {
+  background-color: #00a754c9;
+  color: white;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.tool-container .cancel {
+  background-color: rgb(189, 0, 0);
+}
+
+.tool-container .btn:hover, .open-button:hover {
+  background-color: #ff9900;
+} */
+=======
+}
+>>>>>>> 075bb4cb009f593d7917c8f3e55c2fa457a063fa
