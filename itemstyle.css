@@ -82,8 +82,8 @@ nav img{
     width: 350px;
     height: 32px;
     margin-top: 45px; 
+    margin-left: -100px;
     border-radius: 20px;
-    
 }
 
 input {
@@ -94,7 +94,6 @@ input {
 ul{
     margin-top: 70px;
     margin-left: 40px;
-    float: left;
 }
 
 li{
@@ -111,22 +110,14 @@ ul a{
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .profile-button {
-    position: absolute;
     background-color: #711345;
     color: white;
     padding: 16px 20px;
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    cursor: pointer;
-    opacity: 0.8;
-    margin-right: -200%;
 }
-.profDisplay{
-    position: absolute;
-    bottom: 200px;
-    left: 180px;
-}
+
   
 .profilePage{
     border-radius: 200px;
