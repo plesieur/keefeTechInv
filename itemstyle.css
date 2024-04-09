@@ -39,35 +39,10 @@ nav img{
     margin-bottom: -30px;
 }
 
-.nav-item{
-    border: 1px solid forestgreen;
-}
 
 #item1{
     width: 720px;
 }
-
-
-/*HOTBAR STUFF
-.topnav {
-    overflow: hidden;
-    background-color: #ff9900;
-}
-
-.topnav a {
-    display: inline-block;
-    color: #332d2d;
-    margin: auto;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: #005cd4;
-    color: rgba(255, 255, 255, 0.959);
-}*/
 
 .title{
     margin-top: 0px;
@@ -79,10 +54,10 @@ nav img{
 /*-------- SEARCH BAR ---------*/
 .searchBar{
     border-style: none;
-    width: 350px;
-    height: 32px;
-    margin-top: 45px; 
-    margin-left: -100px;
+    width: 380px;
+    height: 35px;
+    margin-top: 55px; 
+    margin-left: -155px;
     border-radius: 20px;
 }
 
@@ -114,10 +89,10 @@ ul a{
     color: white;
     padding: 16px 20px;
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    height: 55px;
+    width: 55px;
+    font-size: 11px;
 }
-
   
 .profilePage{
     border-radius: 200px;
