@@ -49,7 +49,7 @@
 
   <!-- Grid Container For The Script To Append To -->
   <div class="grid-container "> 
-
+    
   </div>  
   
 
@@ -74,33 +74,34 @@
     </form>
   </div>
 
-      <script>
-        var x = ''
+      <script> //https://stackoverflow.com/questions/3316207/add-onclick-event-to-newly-added-element-in-javascript
         function itemSpawn() {
-          var spawnCondition = document.getElementById("nameInput") //Simple check to make sure user input proper values into the card create
+          //Simple check to make sure user input proper values into the card create
+          var spawnCondition = document.getElementById("nameInput")
           var spawnCondition2 = document.getElementById("quantityInput")
       
           if (spawnCondition.value != "" && spawnCondition2.value != "") {
-            var x = document.createElement("Button"); //Main Button
-            const newDiv = document.createElement("div");
-            const theP = document.createElement("p");
-            const imageCard = document.createElement("div");
+            //Creating a button, div, and text to place onto screen
+            var cardBtn = document.createElement("Button");
+            const cardBorder = document.createElement("div");
+            const innerCardText = document.createElement("p");
 
-            newDiv.classList.add("border");
-            imageCard.classList.add("imageCard");
-            x.setAttribute("class", "grid-item");
+            //Giving border a class for styling purposes
+            cardBorder.classList.add("border");
+            //Placing card into the grid-container in the HTMLs body
+            document.getElementsByClassName("grid-container")[0].appendChild(cardBtn);
 
-            var txtConvert = document.getElementById('nameInput').value;
-            theP.innerText = txtConvert; //Gets Inputted Name And Puts It On Card
+            //Inputting the name typed in and putting it into the text
+            innerCardText.innerText = document.getElementById('nameInput').value; 
+            //Inserting the text into the card
+            cardBorder.appendChild(innerCardText);
 
-            newDiv.appendChild(theP); //Adds div with border for text into the main button
-            document.getElementsByClassName("grid-container")[0].appendChild(x);
-        
-            
+            //Setting buttons class to grid-item for styling
+            cardBtn.setAttribute("class", "grid-item");
+            //Inserting the border into the card
+            cardBtn.appendChild(cardBorder);
 
-            x.appendChild(newDiv);
-            x.appendChild(imageCard);
-
+            //Setting all previous values the user typed into as blank to prepare for next card creation
             spawnCondition.value = "";
             document.getElementById("nameInput").value = spawnCondition.value;
             document.getElementById("quantityInput").value = spawnCondition.value;
