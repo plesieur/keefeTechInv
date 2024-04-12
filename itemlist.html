@@ -110,23 +110,32 @@
           }
         }
 
+        //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
+        function cardPopup() {
+          
+        }
+
+
+
+
         function openItemForm() {
           document.getElementById("myItemForm").style.display = "block";
         }
-
         function closeItemForm() {
           document.getElementById("myItemForm").style.display = "none";
         }
         
+
         function openForm() {
           document.getElementById("myForm").style.display = "block";
         }
-
         function closeForm() {
           document.getElementById("myForm").style.display = "none";
         }
 
-        function fileValidation() { //Alert Invalid File Type Keeps Popping Up, No Preview Div Currently
+
+        //Alert Invalid File Type Keeps Popping Up, No Preview Div Currently
+        function fileValidation() { 
           var imageConvert = document.getElementById('imageInput');
           var imageValue = imageConvert.value;
           var allowExtension = /(\.jpg|\.jpeg|\.png)$/i;
