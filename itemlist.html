@@ -16,6 +16,7 @@
 <body>
 
   <nav>
+    <!--KTI Logo and Title-->
     <p>
       <img src="images/Logo.png" width="100" alt="drawing of a welder">
       Keefe Tech Inventory
@@ -40,16 +41,22 @@
     <form action="/action_page.php" class="form-container">
       <h1><i>Profile</h1></i>
 
+      <!--Your name will display -->
       <h4 id="Name">Jam</h4>
+      <!--profile pic will display-->
       <div class="prof">
         <button type="button" class="pfp" onclick="closeForm()"><img src="images/profile.png" width="80" alt="placeholder"></button>
       </div>
+      <!--displays the email-->
       <h4 id="Email">jam.keefe</h4>
+      <!--What type of account they have (student or admin)-->
       <h5 id="Account">Student Account</h5>
       <button type="button" class="btn Manage account" onclick="closeForm()">Manage Account</button> 
       <a href="login.html">
+      <!--Log out of your account and bring you back to the login page--> 
       <button type="button" class="btn logout" onclick="logout()">logout</button>
       </a>
+      <!--Closes the profile button and goes back to the item page-->
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
