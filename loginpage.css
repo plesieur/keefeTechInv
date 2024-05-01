@@ -12,45 +12,29 @@
     font-size: 18px;
 }      
 
-html {
-  height: 100%;
-  width: 100%;
-}
+.valid {
+    color: green;
+}   
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}   
+  .invalid {
+    color: red;
+}   
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}  
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  background: #005cd4;
-}
-
-
-button {
-  background-color: rgb(255, 102, 0);
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-
-.login{
-  padding: 10px;
-  border-radius: 10%;
-  margin-bottom: -10px;
-  background-color: #ffffff;
-  color: rgb(143, 57, 0);;
-  width: 150px;
-}
-
-
-.orange {
-  background-color: rgb(255, 139, 62);
-  border: none;
-  border-radius: 25px;
+.loginBox {
+  background-color: rgb(255, 255, 255);
+  border-color: orange;
+  border-style: solid;
+  border-width: 14px;
+  border-radius: 45px;
   padding: 20px;
   margin: 0;
   position: absolute;
@@ -64,15 +48,40 @@ button {
   text-align: center;
 }
 
-.box {
-    background-color: black;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.grey{
+  background-color: #c9c9c9;
+  border-radius: 25px;
+  width: 300px;
+  height: 30px;
+  font-family: "Lucida Handwriting", "Courier New", monospace;
+}
+.spacing{
+  margin: 40px;
+}
+.forgot{
+  font-size: 10px;
 }
 
-p {
-    font-size: 17px;
-    align-items: center;
+.login{
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: -10px;
+  background-color: orange;
+  color: ffffff;
+  width: 290px;
+  height: 50px;
+  font-size: 30px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #005cd4;
+}
+
+.show{
+  top: 5px;
+  margin-top: 12px;
+  border: solid white;
+  font-size: small;
 }
