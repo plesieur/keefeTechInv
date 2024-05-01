@@ -14,32 +14,72 @@
 </head>
   
 <body>
-  <nav>
-    <p class="navMainText">
-      <img id="navImage" src="images/Logo.png" width="100" alt="drawing of a welder">
-      Keefe Tech Inventory
+  <nav class="nav-container">
+    <div class="nav-item" id="item1"> 
+        <a class="title" href="itemlist.html"><img src="images/Logo.png" width="125" alt="drawing of a welder">
+        Keefe Tech Inventory</a>
+    </div>
+
+    <div class="nav-item" id="item2"> 
+      <form  action="/action_page.php">
+        <input class="searchBar" type="text" placeholder="Search..." name="search">
+      </form>
+    </div>
+
+    <div class="nav-item" id="item3"> 
+      111
+    </div>
+   <!-- <p class="title">
+      <a href="itemlist.html"><img src="images/Logo.png" width="125" alt="drawing of a welder">
+      Keefe Tech Inventory</a>
     </p>
+
+    <br>
 
     <div class="topnav" id="myTopnav">
       <a href="class.html">CLASSES</a>
       <a href="itemlist.html">ITEMS</a>
       <a class="links" href="login.html">Login</a>
-      <button class="open-button" onclick="openForm()">Profile</button>
-    </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>-->
+      
+      <!-- FIX APPEARANCE 
+      <form  action="/action_page.php">
+        <input class="searchBar" type="text" placeholder="Search..." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>-->
 
+      <!-- FIX APPEARANCE 
+      <button class="profile-button" onclick="openForm()">Profile</button>-->
+
+      <!-- ADD SIDE OVERLAY NAVIGATION W3C SCHOOLS
+      <div class="barMenu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>-->
+
+    </div>
+      
   </nav>
 
+  <!-- INSIDE THE PROFILE BOX -->
+  <!-- INSIDE THE PROFILE BOX -->
   <div class="form-popup" id="myForm">
     <form action="/action_page.php" class="form-container">
       <h1><i>Profile</h1></i>
 
-      <h4 id="Name">Jam</h4>
-      <div class="prof">
-        <button type="button" class="pfp" onclick="closeForm()"><img src="images/profile.png" width="80" alt="placeholder"></button>
+      <!--<h4 id="Name">Jam</h4>-->
+      <div class="profDisplay">
+        <button type="button" class="profilePage" onclick="closeForm()"><img src="images/profile.png" width="80" alt="placeholder"></button>
+      <!--<h4 id="Name">Jam</h4>-->
+      <div class="profDisplay">
+        <button type="button" class="profilePage" onclick="closeForm()"><img src="images/profile.png" width="80" alt="placeholder"></button>
       </div>
       <h4 id="Email">jam.keefe</h4>
       <h5 id="Account">Student Account</h5>
-      <button type="button" class="btn Manage account" onclick="closeForm()">Manage Account</button>
+      <button type="button" class="btn Manage account" onclick="closeForm()">Manage Account</button> 
       <a href="login.html">
       <button type="button" class="btn logout" >logout</button>
       </a>
@@ -148,6 +188,14 @@
             }
           }
 
+        }
+
+        function myFunction(x) {
+         x.classList.toggle("change");
+        }
+
+        function myFunction(x) {
+         x.classList.toggle("change");
         }
       </script>
 
