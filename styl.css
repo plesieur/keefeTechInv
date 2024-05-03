@@ -142,7 +142,7 @@ body {
   padding: 75px;
 }
 .grid-item {
-  border-radius: 25px;
+  border-radius: 15px;
   background-color: rgba(255, 255, 255);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
@@ -150,7 +150,7 @@ body {
   width: 200px;
   font-size: 30px;
   text-align: center;
-}
+} 
 
 .right{
   margin-left: 380%;
@@ -174,33 +174,6 @@ button {
   font-size: 50px;
 }
 
-.login{
-  padding: 10px;
-  border-radius: 10%;
-  margin-bottom: -10px;
-  background-color: #ffffff;
-  color: rgb(143, 57, 0);;
-  width: 150px;
-}
-
-
-.orange {
-  background-color: rgb(255, 139, 62);
-  border: none;
-  border-radius: 25px;
-  padding: 20px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 550px;
-  height: 800px;
-  font-size: 30px;
-  text-align: center;
-}
-
 .addItem{
   border-radius: 50%;
   height: 50px;
@@ -215,9 +188,7 @@ button {
     justify-content: center;
 }
 
-.spacing{
-  margin: 50px;
-}
+
 
 p {
     font-size: 17px;
