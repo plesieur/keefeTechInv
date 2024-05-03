@@ -14,11 +14,10 @@
 </head>
   
 <body>
-
   <nav>
     <!--KTI Logo and Title-->
-    <p>
-      <img src="images/Logo.png" width="100" alt="drawing of a welder">
+    <p class="navMainText">
+      <img id="navImage" src="images/Logo.png" width="100" alt="drawing of a welder">
       Keefe Tech Inventory
     </p>
 
@@ -60,11 +59,15 @@
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
-  
+
+  <!-- Grid Container For The Script To Append To -->
+  <div class="grid-container "> 
+
   </div>  
   
-  <button class="tool-button" onclick="openForm()">+</button>
-  <div class="tool-popup" id="myForm">
+
+  <button class="tool-button buttonOrange" onclick="openItemForm()">+</button>
+  <div class="tool-popup" id="myItemForm">
     <form class="tool-container">
       <h1>New Tool</h1>
 
@@ -80,7 +83,7 @@
       <div id="imagePreview"></div>
 
       <button type="button" class="btn" onclick="itemSpawn()">Create Tool</button> 
-      <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+      <button type="button" class="btn cancel" onclick="closeItemForm()">Cancel</button>
     </form>
   </div>
 
@@ -119,6 +122,14 @@
           }
         }
 
+        function openItemForm() {
+          document.getElementById("myItemForm").style.display = "block";
+        }
+
+        function closeItemForm() {
+          document.getElementById("myItemForm").style.display = "none";
+        }
+        
         function openForm() {
           document.getElementById("myForm").style.display = "block";
         }
@@ -126,7 +137,7 @@
         function closeForm() {
           document.getElementById("myForm").style.display = "none";
         }
-        
+
         function fileValidation() { //Alert Invalid File Type Keeps Popping Up, No Preview Div Currently
           var imageConvert = document.getElementById('imageInput');
           var imageValue = imageConvert.value;
