@@ -27,17 +27,25 @@
     </div>
 
     <div class="nav-item" id="item3"> 
-      <!-- FIX APPEARANCE -->
-      <button class="profile-button" onclick="openForm()">P</button>
-
       <br>
        <!-- ADD SIDE OVERLAY NAVIGATION W3C SCHOOLS-->
-       <div class="barMenu" onclick="myFunction(this)">
+      <div id="barMenu" class="dropbtn" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
-      </div>
-    </div>     
+      
+        <div id="dropDown" class="dropdown-content">
+         <a href="itemlist.html">Items</a>
+         <a href="class.html">Classes</a>
+         <a href="#logout">Log Out</a> <!--ADD LOGOUT LINK-->
+        </div>
+      </div>      
+            
+    </div>  
+
+    <div class="profile">
+      <button class="profile-button" onclick="openForm()">P</button>
+    </div>      
 
   </nav>
 
@@ -59,11 +67,6 @@
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
-
-  <!-- Grid Container For The Script To Append To 
-  <div class="grid-container "> 
-    <img src="images/testing.jpg">
-  </div>  -->
   
 
   <button class="tool-button buttonOrange" onclick="openItemForm()">+</button>
@@ -166,7 +169,25 @@
         function myFunction(x) {
          x.classList.toggle("change");
         }
-      </script>
+
+        function myFunction() {
+         document.getElementById("dropDown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+     </script>
 
 </body>
 
